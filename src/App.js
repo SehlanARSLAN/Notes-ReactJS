@@ -1,23 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
+import NotesList from './components/notesList/NotesList';
+import SearchInput from './components/searchInput/SearchInput';
+import Textarea from './components/textarea/Textarea';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <h1>NotesApp</h1>
+    <SearchInput/>
+    <Textarea/>
+    <NotesList/>
     </div>
   );
 }
